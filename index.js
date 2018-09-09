@@ -18,10 +18,15 @@ function currentLine(line) {
   else {
     newLine = `The line is currently: `
     for (let i = 0; i < line.length; i++) {
-      console.log(i)
       newLine = newLine + (i+1) + ". " + line[i] + ", " 
     }
-    newLine = newLine.slice(0, newLine.length-2)
+      newLine = newLine.slice(0, newLine.length-2)
   }
   return newLine 
 } 
+
+i=0
+function takeANumber() {
+  i = i + 1
+  return i
+}
